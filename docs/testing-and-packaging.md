@@ -65,6 +65,7 @@ npm run test
 npm run test:watch
 npm run typecheck
 npm run sync:heroes
+npm run icons:win
 npm run build
 npm run package
 npm run package:mac
@@ -78,6 +79,7 @@ Do not add commands that rewrite source files unless they are clearly named and 
 
 Current packaging scripts:
 
+- `npm run icons:win`: regenerates `build/icon.ico` from the PNG icon sources for Windows/NSIS packaging.
 - `npm run package:mac`: builds renderer/main/preload, then runs `electron-builder --mac dir`.
 - `npm run package:mac:signed`: builds a macOS `.app` and `.dmg` with code signing required.
 - `npm run package:mac:release`: builds a signed macOS `.app` and `.dmg` with notarization enabled.
