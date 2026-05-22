@@ -21,6 +21,12 @@ import {
 } from "../domain";
 import type { ElectronApi, FileDialogResult, MenuCommand, PersistenceError } from "../shared/electron-api";
 import { validateMatchState } from "../shared/match-persistence";
+import {
+  downloadMatchFile,
+  loadBrowserAutosave,
+  openMatchFile,
+  saveBrowserAutosave
+} from "./browserPersistence";
 import { loadLocalHeroData, type HeroRecord } from "./heroData";
 
 const PLAYER_ROLES = ["对抗路", "打野", "中路", "发育路", "游走"] as const;
@@ -233,12 +239,7 @@ export function App() {
 
   const openMatch = useCallback(async () => {
     const api = desktopApi();
-    if (!api) {
-      setNotice({ text: "当前环境无法打开文件对话框。", kind: "error" });
-      return;
-    }
-
-    const result = await api.openMatch();
+    const result = api ? await api.openMatch() : await openMatchFile();
     const opened = handleFileDialogResult(result, setNotice);
     if (!opened) {
       return;
@@ -254,29 +255,23 @@ export function App() {
 
   const saveMatch = useCallback(async () => {
     const api = desktopApi();
-    if (!api) {
-      setNotice({ text: "当前环境无法保存文件。", kind: "error" });
-      return;
-    }
-
-    const result = await api.saveMatch({
-      matchState: match,
-      defaultPath: createDefaultFileName(match, "match")
-    });
+    const result = api
+      ? await api.saveMatch({
+          matchState: match,
+          defaultPath: createDefaultFileName(match, "match")
+        })
+      : downloadMatchFile(match, createDefaultFileName(match, "match"));
     handleWriteResult(result, menuStatus["save-match"], setNotice);
   }, [match]);
 
   const exportMatch = useCallback(async () => {
     const api = desktopApi();
-    if (!api) {
-      setNotice({ text: "当前环境无法导出文件。", kind: "error" });
-      return;
-    }
-
-    const result = await api.exportMatch({
-      matchState: match,
-      defaultPath: createDefaultFileName(match, "export")
-    });
+    const result = api
+      ? await api.exportMatch({
+          matchState: match,
+          defaultPath: createDefaultFileName(match, "export")
+        })
+      : downloadMatchFile(match, createDefaultFileName(match, "export"));
     handleWriteResult(result, menuStatus["export-match"], setNotice);
   }, [match]);
 
@@ -302,14 +297,11 @@ export function App() {
 
   useEffect(() => {
     const api = desktopApi();
-    if (!api) {
-      didLoadAutosave.current = true;
-      setAutosaveText("浏览器预览模式未启用自动保存");
-      return undefined;
-    }
-
     let disposed = false;
-    void api.loadAutosave().then((result) => {
+
+    const loadResult = api ? api.loadAutosave() : Promise.resolve(loadBrowserAutosave());
+
+    void loadResult.then((result) => {
       if (disposed) {
         return;
       }
@@ -327,9 +319,9 @@ export function App() {
         setTeamBName(result.matchState.teams.teamB.name);
         setPeakDrafts(createPeakDrafts(result.matchState));
         setNotice({ text: "已恢复自动存档。", kind: "success" });
-        setAutosaveText(`已恢复：${result.filePath}`);
+        setAutosaveText(`已恢复${api ? "：" : "浏览器本地存储"}${api ? result.filePath : ""}`);
       } else {
-        setAutosaveText("未发现自动存档");
+        setAutosaveText(api ? "未发现自动存档" : "浏览器本地存储无存档");
       }
     });
 
@@ -339,20 +331,30 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    const api = desktopApi();
-    if (!api || !didLoadAutosave.current) {
+    if (!didLoadAutosave.current) {
       return undefined;
     }
 
+    const api = desktopApi();
     const autosaveTimer = window.setTimeout(() => {
-      void api.autosaveMatch({ matchState: match }).then((result) => {
+      if (api) {
+        void api.autosaveMatch({ matchState: match }).then((result) => {
+          if (!result.ok) {
+            setAutosaveText(formatPersistenceError(result.error));
+            return;
+          }
+
+          setAutosaveText(`自动保存完成：${new Date().toLocaleTimeString("zh-CN")}`);
+        });
+      } else {
+        const result = saveBrowserAutosave(match);
         if (!result.ok) {
           setAutosaveText(formatPersistenceError(result.error));
           return;
         }
 
-        setAutosaveText(`自动保存完成：${new Date().toLocaleTimeString("zh-CN")}`);
-      });
+        setAutosaveText(`自动保存完成（浏览器）：${new Date().toLocaleTimeString("zh-CN")}`);
+      }
     }, 400);
 
     return () => window.clearTimeout(autosaveTimer);
