@@ -41,6 +41,8 @@ This file records completed feature and fix milestones. Keep entries short and u
 - Verification: `git push -u origin main`.
 - Docs: added Chinese README and linked it from the English README.
 - Verification: documentation-only change.
+- GitHub Release: published `v0.1.0` and uploaded `KPL-BP-Panel-0.1.0-mac-arm64.zip` as the verified macOS Apple Silicon asset.
+- Verification: user-confirmed zip extraction preserved valid `codesign --verify --deep --strict` result and `xcrun stapler validate`; `gh release create v0.1.0 ...` returned the release URL.
 
 Verification currently available:
 
