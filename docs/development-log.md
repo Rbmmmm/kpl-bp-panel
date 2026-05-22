@@ -4,6 +4,10 @@ This file records completed feature and fix milestones. Keep entries short and u
 
 ## 2026-05-22
 
+- Web: added browser persistence layer (`browserPersistence.ts`) with `localStorage` autosave, file download for save/export, and file upload for open. App now works in both Electron and browser (GitHub Pages) without code changes.
+- Web: added GitHub Actions workflow `.github/workflows/deploy-pages.yml` to auto-deploy the Vite renderer build to GitHub Pages on push to `main`.
+- Verification: `npm run typecheck`; `npm run test`; `npm run build`.
+
 - UI: synced renderer with 5-ban global BP rules, updated Ban slot/progress counts to 5 per side, normalized 元流之子 local hero records into rule-engine BP units while preserving local icons, and prefixed 元流之子 rule-engine errors with a clear Chinese UI message.
 - Verification: `npm run typecheck`; `npm test`; `npm run build`; browser smoke test confirmed 5 Ban slots per side, `Ban 0/5` progress text, five 元流之子 role-variant cards, no horizontal overflow at 1280px, and 元流之子 illegal pick message from the rule engine.
 - UI: fixed layout to prevent page-level scrolling (`overflow: hidden` on `.app-shell`, `flex: 1` on `.draft-board`) and forced equal heights for side panels and control column (`align-items: stretch`, internal `overflow: auto`).
@@ -49,6 +53,8 @@ This file records completed feature and fix milestones. Keep entries short and u
 - Verification: second Windows packaging workflow passed NSIS icon loading and installer creation, then failed only because electron-builder attempted implicit GitHub publishing without `GH_TOKEN`.
 - Packaging: produced the unsigned Windows x64 NSIS installer through GitHub Actions and downloaded the artifact to `release/windows-installer/KPL-BP-Panel-0.1.0-win-x64-setup.exe`.
 - Verification: `gh run watch 26264319481 --repo Rbmmmm/kpl-bp-panel --exit-status` completed successfully; installer artifact size is 95 MB.
+- GitHub Release: uploaded `KPL-BP-Panel-0.1.0-win-x64-setup.exe` to the existing `v0.1.0` release.
+- Verification: `gh release view v0.1.0 --repo Rbmmmm/kpl-bp-panel --json assets,url` lists both macOS zip and Windows exe assets.
 
 Verification currently available:
 
