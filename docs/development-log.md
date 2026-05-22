@@ -45,6 +45,8 @@ This file records completed feature and fix milestones. Keep entries short and u
 - Verification: user-confirmed zip extraction preserved valid `codesign --verify --deep --strict` result and `xcrun stapler validate`; `gh release create v0.1.0 ...` returned the release URL.
 - Packaging: added `npm run icons:win` and regenerated `build/icon.ico` as a standards-compliant multi-size Windows icon for NSIS packaging.
 - Verification: initial Windows packaging workflow failed because NSIS rejected the old malformed ICO; `npm run icons:win`; `file build/icon.ico`.
+- Packaging: disabled electron-builder implicit CI publishing for Windows packaging by adding `--publish never` to `npm run package:win`.
+- Verification: second Windows packaging workflow passed NSIS icon loading and installer creation, then failed only because electron-builder attempted implicit GitHub publishing without `GH_TOKEN`.
 
 Verification currently available:
 

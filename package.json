@@ -21,7 +21,7 @@
     "package:mac": "npm run build && electron-builder --mac dir",
     "package:mac:signed": "npm run build && electron-builder --mac dir dmg -c.forceCodeSigning=true",
     "package:mac:release": "npm run build && electron-builder --mac dir dmg -c.forceCodeSigning=true -c.mac.notarize=true",
-    "package:win": "npm run build && electron-builder --win nsis",
+    "package:win": "npm run build && electron-builder --win nsis --publish never",
     "dist": "npm run build && electron-builder"
   },
   "dependencies": {
