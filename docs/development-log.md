@@ -39,6 +39,8 @@ This file records completed feature and fix milestones. Keep entries short and u
 - Verification: `gh --version`; `gh auth status` reports no authenticated GitHub session yet.
 - GitHub: created public repository `Rbmmmm/kpl-bp-panel` and pushed the initial `main` branch; macOS Release asset upload was intentionally skipped.
 - Verification: `git push -u origin main`.
+- Docs: added Chinese README and linked it from the English README.
+- Verification: documentation-only change.
 
 Verification currently available:
 

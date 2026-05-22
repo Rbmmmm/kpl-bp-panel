@@ -1,5 +1,7 @@
 # KPL BP Panel
 
+[中文](README.zh-CN.md) | English
+
 KPL BP Panel is a desktop simulator for KPL BO7 Ban/Pick workflows.
 
 ## Features
