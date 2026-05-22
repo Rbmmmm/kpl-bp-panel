@@ -37,6 +37,8 @@ This file records completed feature and fix milestones. Keep entries short and u
 - Verification: `xcrun notarytool info a4f47a07` returned Accepted; `xcrun stapler staple` succeeded; `codesign --verify --deep --strict` passed; `spctl --assess` confirmed notarized.
 - GitHub: added repository README and prepared the project for first GitHub source upload; release artifacts remain excluded from git and should be uploaded as GitHub Release assets after producing a valid signed/notarized macOS package.
 - Verification: `gh --version`; `gh auth status` reports no authenticated GitHub session yet.
+- GitHub: created public repository `Rbmmmm/kpl-bp-panel` and pushed the initial `main` branch; macOS Release asset upload was intentionally skipped.
+- Verification: `git push -u origin main`.
 
 Verification currently available:
 
