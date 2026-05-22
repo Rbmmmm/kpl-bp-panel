@@ -1,0 +1,2606 @@
+{
+  "schemaVersion": 1,
+  "source": "https://pvp.qq.com/web201605/js/herolist.json",
+  "generatedAt": "2026-05-21T20:07:30.867Z",
+  "heroes": [
+    {
+      "id": 105,
+      "name": "廉颇",
+      "title": "正义爆轰",
+      "role": "坦克",
+      "roles": [
+        "坦克"
+      ],
+      "iconUrl": "heroes/105.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/105/105.jpg",
+      "skinNames": [
+        "正义爆轰",
+        "地狱岩魂",
+        "无尽征程",
+        "寅虎·御盾",
+        "功夫炙烤",
+        "撼地雄心"
+      ]
+    },
+    {
+      "id": 106,
+      "name": "小乔",
+      "title": "恋之微风",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/106.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/106/106.jpg",
+      "skinNames": [
+        "恋之微风",
+        "万圣前夜",
+        "天鹅之梦",
+        "纯白花嫁",
+        "缤纷独角兽",
+        "丁香结",
+        "青蛇",
+        "音你心动",
+        "山海·琳琅生",
+        "时之魔女",
+        "秘证寻踪"
+      ]
+    },
+    {
+      "id": 107,
+      "name": "赵云",
+      "title": "苍天翔龙",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "刺客"
+      ],
+      "iconUrl": "heroes/107.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/107/107.jpg",
+      "skinNames": [
+        "苍天翔龙",
+        "忍●炎影",
+        "未来纪元",
+        "皇家上将",
+        "嘻哈天王",
+        "白执事",
+        "引擎之心",
+        "龙胆",
+        "淬星耀世",
+        "百木心枪",
+        "乘龙铭钟鼎"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "墨子",
+      "title": "和平守望",
+      "role": "法师",
+      "roles": [
+        "法师",
+        "战士"
+      ],
+      "iconUrl": "heroes/108.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/108/108.jpg",
+      "skinNames": [
+        "和平守望",
+        "金属风暴",
+        "龙骑士",
+        "进击墨子号",
+        "神迹守卫",
+        "降魔",
+        "黄金天蝎座"
+      ]
+    },
+    {
+      "id": 109,
+      "name": "妲己",
+      "title": "魅力之狐",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/109.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/109/109.jpg",
+      "skinNames": [
+        "魅惑之狐",
+        "女仆咖啡",
+        "魅力维加斯",
+        "仙境爱丽丝",
+        "少女阿狸",
+        "热情桑巴",
+        "时之彼端",
+        "紫罗兰之誓",
+        "时之奇旅",
+        "青丘·九尾",
+        "灵卜魔法",
+        "愿照·众生和"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "嬴政",
+      "title": "王者独尊",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/110.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/110/110.jpg",
+      "skinNames": [
+        "王者独尊",
+        "摇滚巨星",
+        "暗夜贵公子",
+        "优雅恋人",
+        "白昼王子",
+        "玄雷天君"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "孙尚香",
+      "title": "千金重弩",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/111.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/111/111.jpg",
+      "skinNames": [
+        "千金重弩",
+        "火炮千金",
+        "水果甜心",
+        "蔷薇恋人",
+        "杀手不太冷",
+        "末日机甲",
+        "沉稳之力",
+        "时之恋人",
+        "异界灵契",
+        "音你闪耀",
+        "乘龙问璇玑"
+      ]
+    },
+    {
+      "id": 112,
+      "name": "鲁班七号",
+      "title": "机关造物",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/112.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112.jpg",
+      "skinNames": [
+        "机关造物",
+        "木偶奇遇记",
+        "福禄兄弟",
+        "电玩小子",
+        "星空梦想",
+        "狮舞东方",
+        "黑桃队长",
+        "乒乒小将",
+        "寅虎·瑞焰",
+        "时之奇旅",
+        "蔬乡物语",
+        "江户川柯南",
+        "班班快跑"
+      ]
+    },
+    {
+      "id": 113,
+      "name": "庄周",
+      "title": "逍遥梦幻",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/113.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/113/113.jpg",
+      "skinNames": [
+        "逍遥幻梦",
+        "鲤鱼之梦",
+        "蜃楼王",
+        "云端筑梦师",
+        "奇妙博物学",
+        "玄嵩",
+        "高山流水",
+        "天秀·幻梦",
+        "牧神诗旅",
+        "锦麟游梦"
+      ]
+    },
+    {
+      "id": 114,
+      "name": "刘禅",
+      "title": "暴走机关",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/114.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/114/114.jpg",
+      "skinNames": [
+        "暴走机关",
+        "英喵野望",
+        "绅士熊喵",
+        "天才门将",
+        "秘密基地",
+        "唤灵魔甲",
+        "电玩·爆裂旋风",
+        "鸭鸭历险记"
+      ]
+    },
+    {
+      "id": 115,
+      "name": "高渐离",
+      "title": "叛逆吟游",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/115.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/115/115.jpg",
+      "skinNames": [
+        "叛逆吟游",
+        "金属狂潮",
+        "死亡摇滚",
+        "玩趣恶龙",
+        "天秀·音浪",
+        "燃音魔法"
+      ]
+    },
+    {
+      "id": 116,
+      "name": "阿轲",
+      "title": "信念之刃",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/116.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/116/116.jpg",
+      "skinNames": [
+        "信念之刃",
+        "爱心护理",
+        "暗夜猫娘",
+        "致命风华",
+        "节奏热浪",
+        "迷踪丽影",
+        "化蝶舞"
+      ]
+    },
+    {
+      "id": 117,
+      "name": "钟无艳",
+      "title": "野蛮之锤",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/117.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/117/117.jpg",
+      "skinNames": [
+        "野蛮之锤",
+        "生化警戒",
+        "王者之锤",
+        "海滩丽影",
+        "超时空战士",
+        "聚星闪耀",
+        "春野之旅",
+        "戍鼓铭心",
+        "戍鼓铭心"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "孙膑",
+      "title": "逆流之时",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "法师"
+      ],
+      "iconUrl": "heroes/118.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/118/118.jpg",
+      "skinNames": [
+        "逆流之时",
+        "未来旅行",
+        "天使之翼",
+        "妖精王",
+        "归虚梦演",
+        "天狼运算者",
+        "寅虎·展翼",
+        "小动物乐团",
+        "茶境仙"
+      ]
+    },
+    {
+      "id": 119,
+      "name": "扁鹊",
+      "title": "善恶怪医",
+      "role": "法师",
+      "roles": [
+        "法师",
+        "战士"
+      ],
+      "iconUrl": "heroes/119.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/119/119.jpg",
+      "skinNames": [
+        "善恶怪医",
+        "救世之瞳",
+        "化身博士",
+        "炼金王",
+        "奇幻香踪",
+        "无尽旅途",
+        "灵蛊蚀心"
+      ]
+    },
+    {
+      "id": 120,
+      "name": "白起",
+      "title": "最终兵器",
+      "role": "坦克",
+      "roles": [
+        "坦克"
+      ],
+      "iconUrl": "heroes/120.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/120/120.jpg",
+      "skinNames": [
+        "最终兵器",
+        "白色死神",
+        "狰",
+        "星夜王子",
+        "夜都怪侠",
+        "乐园追猎者",
+        "苍鳞隐世",
+        "死霸装"
+      ]
+    },
+    {
+      "id": 121,
+      "name": "芈月",
+      "title": "永恒之月",
+      "role": "法师",
+      "roles": [
+        "法师",
+        "战士"
+      ],
+      "iconUrl": "heroes/121.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/121/121.jpg",
+      "skinNames": [
+        "永恒之月",
+        "红桃皇后",
+        "大秦宣太后",
+        "重明",
+        "白晶晶",
+        "幻夜卜梦",
+        "浮光幕影",
+        "瑰影绮梦"
+      ]
+    },
+    {
+      "id": 123,
+      "name": "吕布",
+      "title": "无双之魔",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/123.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/123/123.jpg",
+      "skinNames": [
+        "无双之魔",
+        "圣诞狂欢",
+        "天魔缭乱",
+        "末日机甲",
+        "猎兽之王",
+        "野性能量",
+        "御风骁将",
+        "怒海麟威",
+        "遇见神鼓",
+        "曦玄引",
+        "逐霄战戟"
+      ]
+    },
+    {
+      "id": 124,
+      "name": "周瑜",
+      "title": "铁血都督",
+      "role": "法师",
+      "roles": [
+        "法师",
+        "战士"
+      ],
+      "iconUrl": "heroes/124.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/124/124.jpg",
+      "skinNames": [
+        "铁血都督",
+        "海军大将",
+        "真爱至上",
+        "赤莲之焰",
+        "音你心动",
+        "雪夜绮愿",
+        "熔金海岸",
+        "百相守梦",
+        "线条小狗"
+      ]
+    },
+    {
+      "id": 126,
+      "name": "夏侯惇",
+      "title": "不羁之风",
+      "role": "坦克",
+      "roles": [
+        "坦克",
+        "战士"
+      ],
+      "iconUrl": "heroes/126.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/126/126.jpg",
+      "skinNames": [
+        "不羁之风",
+        "战争骑士",
+        "乘风破浪",
+        "无限飓风号",
+        "朔风刀",
+        "匿光决锋者",
+        "霜北刀"
+      ]
+    },
+    {
+      "id": 127,
+      "name": "甄姬",
+      "title": "洛神降临",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/127.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/127/127.jpg",
+      "skinNames": [
+        "洛神降临",
+        "冰雪圆舞曲",
+        "花好人间",
+        "游园惊梦",
+        "幽恒",
+        "女儿国国王",
+        "落雪兰心",
+        "至美·化雀舞",
+        "雪境奇遇",
+        "逆浪荇歌"
+      ]
+    },
+    {
+      "id": 128,
+      "name": "曹操",
+      "title": "鲜血枭雄",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/128.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/128/128.jpg",
+      "skinNames": [
+        "鲜血枭雄",
+        "超能战警",
+        "幽灵船长",
+        "死神来了",
+        "烛龙",
+        "天狼征服者",
+        "决胜大满贯"
+      ]
+    },
+    {
+      "id": 129,
+      "name": "典韦",
+      "title": "狂战士",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/129.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/129/129.jpg",
+      "skinNames": [
+        "狂战士",
+        "黄金武士",
+        "穷奇",
+        "蓝屏警告",
+        "岱宗",
+        "铁甲之心",
+        "战鼓燎原",
+        "铁骨偃魂"
+      ]
+    },
+    {
+      "id": 130,
+      "name": "宫本武藏",
+      "title": "剑圣",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "刺客"
+      ],
+      "iconUrl": "heroes/130.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/130/130.jpg",
+      "skinNames": [
+        "剑圣",
+        "鬼剑武藏",
+        "未来纪元",
+        "万象初新",
+        "地狱之眼",
+        "霸王丸",
+        "惊梅引",
+        "黑崎一护"
+      ]
+    },
+    {
+      "id": 131,
+      "name": "李白",
+      "title": "青莲剑仙",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/131.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131.jpg",
+      "skinNames": [
+        "青莲剑仙",
+        "范海辛",
+        "千年之狐",
+        "凤求凰",
+        "敏锐之力",
+        "鸣剑·曳影",
+        "诗剑行",
+        "碎月剑心",
+        "谪仙醉月"
+      ]
+    },
+    {
+      "id": 132,
+      "name": "马可波罗",
+      "title": "远游之枪",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/132.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/132/132.jpg",
+      "skinNames": [
+        "远游之枪",
+        "激情绿茵",
+        "逐梦之星",
+        "暗影游猎",
+        "潮玩牛仔",
+        "深海之息",
+        "山海·玄木吟",
+        "妄想实况",
+        "星界特工",
+        "怪盗基德"
+      ]
+    },
+    {
+      "id": 133,
+      "name": "狄仁杰",
+      "title": "断案大师",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/133.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/133/133.jpg",
+      "skinNames": [
+        "断案大师",
+        "锦衣卫",
+        "魔术师",
+        "超时空战士",
+        "阴阳师",
+        "鹰眼统帅",
+        "万华元夜",
+        "星际治安官",
+        "神器·狴犴令",
+        "绮世丹青"
+      ]
+    },
+    {
+      "id": 134,
+      "name": "达摩",
+      "title": "拳僧",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/134.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/134/134.jpg",
+      "skinNames": [
+        "拳僧",
+        "拳王",
+        "大发明家",
+        "黄金狮子座",
+        "星际陆战队",
+        "沙漠行僧",
+        "爆烈喵拳"
+      ]
+    },
+    {
+      "id": 135,
+      "name": "项羽",
+      "title": "霸王",
+      "role": "坦克",
+      "roles": [
+        "坦克",
+        "战士"
+      ],
+      "iconUrl": "heroes/135.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/135/135.jpg",
+      "skinNames": [
+        "霸王",
+        "帝国元帅",
+        "苍穹之光",
+        "海滩派对",
+        "职棒王牌",
+        "霸王别姬",
+        "科学大爆炸",
+        "无限倾心",
+        "苍威无极",
+        "九幽镇关"
+      ]
+    },
+    {
+      "id": 136,
+      "name": "武则天",
+      "title": "女帝",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/136.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/136/136.jpg",
+      "skinNames": [
+        "女帝",
+        "东方不败",
+        "海洋之心",
+        "倪克斯神谕",
+        "神器·明辉仪"
+      ]
+    },
+    {
+      "id": 139,
+      "name": "老夫子",
+      "title": "万古长明",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/139.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/139/139.jpg",
+      "skinNames": [
+        "万古长明",
+        "潮流仙人",
+        "圣诞老人",
+        "功夫老勺",
+        "醍醐杖",
+        "航海奇遇记",
+        "百相守梦",
+        "藏狐·褐绒"
+      ]
+    },
+    {
+      "id": 140,
+      "name": "关羽",
+      "title": "一骑当千",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/140.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/140/140.jpg",
+      "skinNames": [
+        "一骑当千",
+        "龙腾万里",
+        "天启骑士",
+        "冰锋战神",
+        "武圣",
+        "赤影疾锋",
+        "百相守梦",
+        "决胜骁骑"
+      ]
+    },
+    {
+      "id": 141,
+      "name": "貂蝉",
+      "title": "绝世舞姬",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/141.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/141/141.jpg",
+      "skinNames": [
+        "绝世舞姬",
+        "异域舞娘",
+        "圣诞恋歌",
+        "仲夏夜之梦",
+        "逐梦之音",
+        "猫影幻舞",
+        "遇见胡旋",
+        "唤灵魅影",
+        "幻阙歌",
+        "曦玄引",
+        "长夏之忆",
+        "馥梦繁花"
+      ]
+    },
+    {
+      "id": 142,
+      "name": "安琪拉",
+      "title": "暗夜萝莉",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/142.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/142/142.jpg",
+      "skinNames": [
+        "暗夜萝莉",
+        "玩偶对对碰",
+        "魔法小厨娘",
+        "心灵骇客",
+        "如懿",
+        "时之奇旅",
+        "追逃游戏",
+        "乘龙聚宝船",
+        "酷洛米之心",
+        "糖果风暴"
+      ]
+    },
+    {
+      "id": 144,
+      "name": "程咬金",
+      "title": "热烈之斧",
+      "role": "坦克",
+      "roles": [
+        "坦克"
+      ],
+      "iconUrl": "heroes/144.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/144/144.jpg",
+      "skinNames": [
+        "热烈之斧",
+        "爱与正义",
+        "星际陆战队",
+        "华尔街大亨",
+        "功夫厨神",
+        "活力突击",
+        "演武夺筹",
+        "无双福将",
+        "暖冬絮语",
+        "群星魔术团"
+      ]
+    },
+    {
+      "id": 146,
+      "name": "露娜",
+      "title": "月光之女",
+      "role": "刺客",
+      "roles": [
+        "刺客",
+        "法师"
+      ],
+      "iconUrl": "heroes/146.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/146/146.jpg",
+      "skinNames": [
+        "月光之女",
+        "哥特玫瑰",
+        "绯红之刃",
+        "紫霞仙子",
+        "一生所爱",
+        "瓷语鉴心",
+        "启示之音",
+        "霜月吟",
+        "命运加冕"
+      ]
+    },
+    {
+      "id": 148,
+      "name": "姜子牙",
+      "title": "封神者",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/148.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/148/148.jpg",
+      "skinNames": [
+        "太古魔导",
+        "时尚教父",
+        "炽热元素使",
+        "闲日渔趣",
+        "天穹之誓",
+        "星梦巡礼"
+      ]
+    },
+    {
+      "id": 149,
+      "name": "刘邦",
+      "title": "双面君主",
+      "role": "坦克",
+      "roles": [
+        "坦克",
+        "法师"
+      ],
+      "iconUrl": "heroes/149.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/149/149.jpg",
+      "skinNames": [
+        "双面君主",
+        "圣殿之光",
+        "德古拉伯爵",
+        "夺宝奇兵",
+        "虎啸剑宗",
+        "剑破天穹"
+      ]
+    },
+    {
+      "id": 150,
+      "name": "韩信",
+      "title": "国士无双",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/150.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/150/150.jpg",
+      "skinNames": [
+        "国士无双",
+        "街头霸王",
+        "教廷特使",
+        "白龙吟",
+        "逐梦之影",
+        "飞衡",
+        "傲雪梅枪",
+        "弑枪猎影",
+        "群星魔术团"
+      ]
+    },
+    {
+      "id": 152,
+      "name": "王昭君",
+      "title": "冰雪之华",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/152.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/152/152.jpg",
+      "skinNames": [
+        "冰雪之华",
+        "精灵公主",
+        "偶像歌手",
+        "凤凰于飞",
+        "幻想奇妙夜",
+        "乞巧织情",
+        "午后时光",
+        "星穹之声",
+        "映山客",
+        "长夜焕生"
+      ]
+    },
+    {
+      "id": 153,
+      "name": "兰陵王",
+      "title": "暗影刀锋",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/153.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/153/153.jpg",
+      "skinNames": [
+        "暗影刀锋",
+        "隐刃",
+        "暗隐猎兽者",
+        "驯魔猎人",
+        "默契交锋",
+        "金庭之子",
+        "影龙天霄",
+        "雾影缉谜"
+      ]
+    },
+    {
+      "id": 154,
+      "name": "花木兰",
+      "title": "传说之刃",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/154.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/154/154.jpg",
+      "skinNames": [
+        "传说之刃",
+        "剑舞者",
+        "兔女郎",
+        "水晶猎龙者",
+        "青春决赛季",
+        "冠军飞将",
+        "瑞麟志",
+        "默契交锋",
+        "九霄神辉",
+        "燃星之曲"
+      ]
+    },
+    {
+      "id": 156,
+      "name": "张良",
+      "title": "言灵之书",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/156.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/156/156.jpg",
+      "skinNames": [
+        "言灵之书",
+        "天堂福音",
+        "一千零一夜",
+        "幽兰居士",
+        "黄金白羊座",
+        "缤纷绘卷",
+        "千筹问战",
+        "古海寻踪",
+        "灵野札记"
+      ]
+    },
+    {
+      "id": 157,
+      "name": "不知火舞",
+      "title": "明媚烈焰",
+      "role": "刺客",
+      "roles": [
+        "刺客",
+        "法师"
+      ],
+      "iconUrl": "heroes/157.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/157/157.jpg",
+      "skinNames": [
+        "明媚烈焰",
+        "魅语",
+        "绯月行",
+        "花合斗"
+      ]
+    },
+    {
+      "id": 162,
+      "name": "娜可露露",
+      "title": "鹰之守护",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/162.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/162/162.jpg",
+      "skinNames": [
+        "鹰之守护",
+        "晚萤",
+        "前尘镜"
+      ]
+    },
+    {
+      "id": 163,
+      "name": "橘右京",
+      "title": "神梦一刀",
+      "role": "刺客",
+      "roles": [
+        "刺客",
+        "战士"
+      ],
+      "iconUrl": "heroes/163.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/163/163.jpg",
+      "skinNames": [
+        "神梦一刀",
+        "修罗",
+        "枫霜尽"
+      ]
+    },
+    {
+      "id": 166,
+      "name": "亚瑟",
+      "title": "圣骑之力",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/166.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/166/166.jpg",
+      "skinNames": [
+        "圣骑之力",
+        "死亡骑士",
+        "狮心王",
+        "心灵战警",
+        "潮玩骑士王",
+        "追逃游戏",
+        "鸿运当头",
+        "动物派对",
+        "布丁狗之誓"
+      ]
+    },
+    {
+      "id": 167,
+      "name": "孙悟空",
+      "title": "齐天大圣",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/167.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/167/167.jpg",
+      "skinNames": [
+        "齐天大圣",
+        "地狱火",
+        "西部大镖客",
+        "美猴王",
+        "至尊宝",
+        "全息碎影",
+        "大圣娶亲",
+        "零号·赤焰",
+        "孙行者",
+        "齐天大圣",
+        "神迹守卫",
+        "无相"
+      ]
+    },
+    {
+      "id": 168,
+      "name": "牛魔",
+      "title": "精英酋长",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/168.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/168/168.jpg",
+      "skinNames": [
+        "精英酋长",
+        "西部大镖客",
+        "制霸全明星",
+        "御旌",
+        "奔雷神使",
+        "牛运亨通",
+        "星界战将",
+        "小牛鸭"
+      ]
+    },
+    {
+      "id": 169,
+      "name": "后羿",
+      "title": "半神之弓",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/169.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/169/169.jpg",
+      "skinNames": [
+        "半神之弓",
+        "精灵王",
+        "阿尔法小队",
+        "辉光之辰",
+        "黄金射手座",
+        "如梦令",
+        "圣弓游侠",
+        "无尽星芒",
+        "完美运算",
+        "石田雨龙"
+      ]
+    },
+    {
+      "id": 170,
+      "name": "刘备",
+      "title": "仁德义枪",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/170.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/170/170.jpg",
+      "skinNames": [
+        "仁德义枪",
+        "万事如意",
+        "纽约教父",
+        "汉昭烈帝",
+        "时之恋人",
+        "潮玩造梦师",
+        "百相守梦",
+        "异域游侠",
+        "浪漫序章"
+      ]
+    },
+    {
+      "id": 171,
+      "name": "张飞",
+      "title": "禁血狂兽",
+      "role": "坦克",
+      "roles": [
+        "坦克",
+        "辅助"
+      ],
+      "iconUrl": "heroes/171.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/171/171.jpg",
+      "skinNames": [
+        "禁血狂兽",
+        "五福同心",
+        "乱世虎臣",
+        "虎魂",
+        "百相守梦",
+        "兔狲·蓬尾"
+      ]
+    },
+    {
+      "id": 173,
+      "name": "李元芳",
+      "title": "王都密探",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/173.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/173/173.jpg",
+      "skinNames": [
+        "王都密探",
+        "特种部队",
+        "黑猫爱糖果",
+        "逐浪之夏",
+        "银河之约",
+        "飞鸢探春",
+        "云中旅人",
+        "妄想特派",
+        "匿光侦查者",
+        "蔬乡物语"
+      ]
+    },
+    {
+      "id": 174,
+      "name": "虞姬",
+      "title": "森之风灵",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/174.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/174/174.jpg",
+      "skinNames": [
+        "森之风灵",
+        "加勒比小姐",
+        "霸王别姬",
+        "凯尔特女王",
+        "云霓雀翎",
+        "启明星使",
+        "无限倾心",
+        "神鉴启示录",
+        "夏日便利店",
+        "愿照·岁时盈",
+        "溯影追猎"
+      ]
+    },
+    {
+      "id": 175,
+      "name": "钟馗",
+      "title": "虚灵城判",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/175.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/175/175.jpg",
+      "skinNames": [
+        "虚灵城判",
+        "地府判官",
+        "神迹守卫",
+        "驱傩正仪",
+        "乐园奇幻夜",
+        "虚灵犬护"
+      ]
+    },
+    {
+      "id": 178,
+      "name": "杨戬",
+      "title": "根源之目",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/178.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/178/178.jpg",
+      "skinNames": [
+        "根源之目",
+        "埃及法老",
+        "永曜之星",
+        "次元傲视",
+        "天秀·启明",
+        "潮玩骑兵",
+        "破阵·退雄兵"
+      ]
+    },
+    {
+      "id": 183,
+      "name": "雅典娜",
+      "title": "圣域余晖",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "刺客"
+      ],
+      "iconUrl": "heroes/183.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/183/183.jpg",
+      "skinNames": [
+        "圣域余晖",
+        "战争女神",
+        "冰冠公主",
+        "神奇女侠",
+        "单词大作战",
+        "黎明之约",
+        "潮玩士官长"
+      ]
+    },
+    {
+      "id": 184,
+      "name": "蔡文姬",
+      "title": "天籁弦音",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "法师"
+      ],
+      "iconUrl": "heroes/184.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/184/184.jpg",
+      "skinNames": [
+        "天籁弦音",
+        "蔷薇王座",
+        "奇迹圣诞",
+        "舞动绿茵",
+        "繁星吟游",
+        "花朝如约",
+        "电玩·兔顽号",
+        "夏日便利店",
+        "愿照·福禄聚",
+        "奇遇梦乡"
+      ]
+    },
+    {
+      "id": 186,
+      "name": "太乙真人",
+      "title": "炼金大师",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/186.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/186/186.jpg",
+      "skinNames": [
+        "炼金大师",
+        "圆桌骑士",
+        "饕餮",
+        "华丽摇滚",
+        "劲辣红锅",
+        "谧流熔炉"
+      ]
+    },
+    {
+      "id": 180,
+      "name": "哪吒",
+      "title": "桀骜炎枪",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/180.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/180/180.jpg",
+      "skinNames": [
+        "桀骜炎枪",
+        "三太子",
+        "逐梦之翼",
+        "次元突破",
+        "雪上飞焰",
+        "热血海滩"
+      ]
+    },
+    {
+      "id": 190,
+      "name": "诸葛亮",
+      "title": "绝代智谋",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/190.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/190/190.jpg",
+      "skinNames": [
+        "绝代智谋",
+        "星航指挥官",
+        "黄金分割率",
+        "武陵仙君",
+        "掌控之力",
+        "时雨天司",
+        "星域神启",
+        "鹤羽星尊",
+        "天机白泽"
+      ]
+    },
+    {
+      "id": 192,
+      "name": "黄忠",
+      "title": "燃魂重炮",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/192.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/192/192.jpg",
+      "skinNames": [
+        "燃魂重炮",
+        "芝加哥教父",
+        "烈魂",
+        "火炮绅士",
+        "怒海冲锋"
+      ]
+    },
+    {
+      "id": 191,
+      "name": "大乔",
+      "title": "沧海之曜",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "法师"
+      ],
+      "iconUrl": "heroes/191.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/191/191.jpg",
+      "skinNames": [
+        "沧海之曜",
+        "伊势巫女",
+        "守护之力",
+        "猫狗日记",
+        "白蛇",
+        "白鹤梁神女",
+        "挚爱花嫁",
+        "时之奇旅",
+        "乘龙忆丹青",
+        "绒语心约"
+      ]
+    },
+    {
+      "id": 187,
+      "name": "东皇太一",
+      "title": "噬灭日蚀",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "法师"
+      ],
+      "iconUrl": "heroes/187.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/187/187.jpg",
+      "skinNames": [
+        "噬灭日蚀",
+        "东海龙王",
+        "逐梦之光",
+        "灼幽烈阳",
+        "噬灭天穹",
+        "金福满堂"
+      ]
+    },
+    {
+      "id": 182,
+      "name": "干将莫邪",
+      "title": "淬命双剑",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/182.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/182/182.jpg",
+      "skinNames": [
+        "淬命双剑",
+        "第七人偶",
+        "冰霜恋舞曲",
+        "久胜战神",
+        "真爱魔法",
+        "胡桃夹子",
+        "画中仙",
+        "雾都夜雨",
+        "千山共赴"
+      ]
+    },
+    {
+      "id": 189,
+      "name": "鬼谷子",
+      "title": "万物有灵",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "法师"
+      ],
+      "iconUrl": "heroes/189.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/189/189.jpg",
+      "skinNames": [
+        "万物有灵",
+        "阿摩司公爵",
+        "幻乐之宴",
+        "原初探秘者",
+        "五谷丰年",
+        "天穹祈灯",
+        "克喵",
+        "谜偶窥秘"
+      ]
+    },
+    {
+      "id": 193,
+      "name": "铠",
+      "title": "破灭刃锋",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/193.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/193/193.jpg",
+      "skinNames": [
+        "破灭刃锋",
+        "龙域领主",
+        "曙光守护者",
+        "青龙志",
+        "绛天战甲",
+        "银白咏叹调",
+        "琥珀纪元",
+        "冥王哈迪斯"
+      ]
+    },
+    {
+      "id": 196,
+      "name": "百里守约",
+      "title": "静谧之眼",
+      "role": "射手",
+      "roles": [
+        "射手",
+        "刺客"
+      ],
+      "iconUrl": "heroes/196.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/196/196.jpg",
+      "skinNames": [
+        "静谧之眼",
+        "绝影神枪",
+        "特工魅影",
+        "朱雀志",
+        "碎云",
+        "真我赫兹",
+        "雪豹·霜爪"
+      ]
+    },
+    {
+      "id": 195,
+      "name": "百里玄策",
+      "title": "嚣狂之镰",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/195.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/195/195.jpg",
+      "skinNames": [
+        "嚣狂之镰",
+        "威尼斯狂欢",
+        "白虎志",
+        "原初追逐者",
+        "热力回旋",
+        "超元猎域",
+        "百相守梦"
+      ]
+    },
+    {
+      "id": 194,
+      "name": "苏烈",
+      "title": "不屈铁壁",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/194.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/194/194.jpg",
+      "skinNames": [
+        "不屈铁壁",
+        "爱与和平",
+        "坚韧之力",
+        "玄武志",
+        "千军破阵",
+        "春野闲踪"
+      ]
+    },
+    {
+      "id": 198,
+      "name": "梦奇",
+      "title": "入梦之灵",
+      "role": "坦克",
+      "roles": [
+        "坦克",
+        "法师"
+      ],
+      "iconUrl": "heroes/198.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/198/198.jpg",
+      "skinNames": [
+        "入梦之灵",
+        "美梦成真",
+        "胖达荣荣",
+        "天降福星",
+        "顽趣"
+      ]
+    },
+    {
+      "id": 179,
+      "name": "女娲",
+      "title": "至高创世",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/179.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/179/179.jpg",
+      "skinNames": [
+        "至高创世",
+        "尼罗河女神",
+        "朔望之晖",
+        "补天",
+        "愿照·千秋盛"
+      ]
+    },
+    {
+      "id": 501,
+      "name": "明世隐",
+      "title": "灵魂劫卜",
+      "role": "辅助",
+      "roles": [
+        "辅助"
+      ],
+      "iconUrl": "heroes/501.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/501/501.jpg",
+      "skinNames": [
+        "灵魂劫卜",
+        "占星术士",
+        "虹云星官",
+        "疑决卦",
+        "吟游魔法",
+        "夜落电台",
+        "景韶洛都"
+      ]
+    },
+    {
+      "id": 199,
+      "name": "公孙离",
+      "title": "幻舞玲珑",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/199.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/199/199.jpg",
+      "skinNames": [
+        "幻舞玲珑",
+        "花间舞",
+        "蜜橘之夏",
+        "无限星赏官",
+        "祈雪灵祝",
+        "玉兔公主",
+        "记忆之芯",
+        "离恨烟",
+        "云诺千山",
+        "涂山容容"
+      ]
+    },
+    {
+      "id": 176,
+      "name": "杨玉环",
+      "title": "霓裳风华",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/176.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/176/176.jpg",
+      "skinNames": [
+        "风华霓裳",
+        "霓裳曲",
+        "遇见飞天",
+        "寅虎·心曲",
+        "银翎春语"
+      ]
+    },
+    {
+      "id": 502,
+      "name": "裴擒虎",
+      "title": "六合虎拳",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/502.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/502/502.jpg",
+      "skinNames": [
+        "六合虎拳",
+        "街头霸王",
+        "梅西",
+        "天狼狩猎者",
+        "李小龙",
+        "寅虎·赤拳",
+        "擒涛扼浪",
+        "祥瑞亨通"
+      ]
+    },
+    {
+      "id": 197,
+      "name": "弈星",
+      "title": "天元之弈",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/197.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/197/197.jpg",
+      "skinNames": [
+        "天元之弈",
+        "踏雪寻梅",
+        "混沌棋",
+        "滕王阁序",
+        "炽奕燎原",
+        "万物之道",
+        "守夜人"
+      ]
+    },
+    {
+      "id": 503,
+      "name": "狂铁",
+      "title": "战车意志",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/503.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/503/503.jpg",
+      "skinNames": [
+        "战车意志",
+        "命运角斗场",
+        "御狮",
+        "特工战影",
+        "电玩高手",
+        "龙之律动"
+      ]
+    },
+    {
+      "id": 504,
+      "name": "米莱狄",
+      "title": "筑城者",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/504.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/504/504.jpg",
+      "skinNames": [
+        "筑城者",
+        "精准探案法",
+        "御霄",
+        "胡桃异想国",
+        "契约魔法",
+        "完美假期",
+        "怪诞之夜"
+      ]
+    },
+    {
+      "id": 125,
+      "name": "元歌",
+      "title": "无间傀儡",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/125.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/125/125.jpg",
+      "skinNames": [
+        "无间傀儡",
+        "午夜歌剧院",
+        "云间偶戏",
+        "无心",
+        "诡秘之主"
+      ]
+    },
+    {
+      "id": 510,
+      "name": "孙策",
+      "title": "光明之海",
+      "role": "坦克",
+      "roles": [
+        "坦克",
+        "战士"
+      ],
+      "iconUrl": "heroes/510.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/510/510.jpg",
+      "skinNames": [
+        "光明之海",
+        "海之征途",
+        "猫狗日记",
+        "末日机甲",
+        "挚爱之约",
+        "乘龙淬吴钩",
+        "时之奇旅",
+        "百相守梦"
+      ]
+    },
+    {
+      "id": 137,
+      "name": "司马懿",
+      "title": "寂灭之心",
+      "role": "刺客",
+      "roles": [
+        "刺客",
+        "法师"
+      ],
+      "iconUrl": "heroes/137.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/137/137.jpg",
+      "skinNames": [
+        "寂灭之心",
+        "魇语军师",
+        "暗渊魔法",
+        "九山相柳"
+      ]
+    },
+    {
+      "id": 509,
+      "name": "盾山",
+      "title": "无尽之盾",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/509.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/509/509.jpg",
+      "skinNames": [
+        "无尽之盾",
+        "极冰防御线",
+        "御銮",
+        "圆桌骑士",
+        "梦圆繁星"
+      ]
+    },
+    {
+      "id": 508,
+      "name": "伽罗",
+      "title": "破魔之箭",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/508.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/508/508.jpg",
+      "skinNames": [
+        "破魔之箭",
+        "花见巫女",
+        "箭羽风息",
+        "太华",
+        "天狼溯光者",
+        "炽翼辉光",
+        "琥珀纪元"
+      ]
+    },
+    {
+      "id": 312,
+      "name": "沈梦溪",
+      "title": "爆弹怪猫",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/312.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/312/312.jpg",
+      "skinNames": [
+        "爆弹怪猫",
+        "棒球奇才",
+        "鲨炮海盗猫",
+        "星空之诺",
+        "月团寄思",
+        "大漠名商",
+        "匿光破解者",
+        "龙舞盛年",
+        "鸭鸭历险记"
+      ]
+    },
+    {
+      "id": 507,
+      "name": "李信",
+      "title": "谋世之战",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/507.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/507/507.jpg",
+      "skinNames": [
+        "谋世之战",
+        "灼热之刃",
+        "一念神魔",
+        "山海·炽霜斩"
+      ]
+    },
+    {
+      "id": 513,
+      "name": "上官婉儿",
+      "title": "惊鸿之笔",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/513.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/513/513.jpg",
+      "skinNames": [
+        "惊鸿之笔",
+        "修竹墨客",
+        "梁祝",
+        "天狼绘梦者",
+        "神器·万象笔",
+        "妄想奇谈",
+        "群星魔术团"
+      ]
+    },
+    {
+      "id": 515,
+      "name": "嫦娥",
+      "title": "寒月公主",
+      "role": "法师",
+      "roles": [
+        "法师",
+        "战士"
+      ],
+      "iconUrl": "heroes/515.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/515/515.jpg",
+      "skinNames": [
+        "寒月公主",
+        "露花倒影",
+        "如梦令",
+        "拒霜思",
+        "暖冬·兔眠",
+        "漠中幻影"
+      ]
+    },
+    {
+      "id": 511,
+      "name": "猪八戒",
+      "title": "无忧猛士",
+      "role": "坦克",
+      "roles": [
+        "坦克"
+      ],
+      "iconUrl": "heroes/511.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/511/511.jpg",
+      "skinNames": [
+        "无忧猛士",
+        "年年有余",
+        "西部大镖客",
+        "猪悟能",
+        "潮玩探月行"
+      ]
+    },
+    {
+      "id": 529,
+      "name": "盘古",
+      "title": "破晓之神",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/529.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/529/529.jpg",
+      "skinNames": [
+        "破晓之神",
+        "创世神祝",
+        "重装意志",
+        "冰霜神祇",
+        "经纬探寻者",
+        "敬我三分",
+        "撼世英歌"
+      ]
+    },
+    {
+      "id": 505,
+      "name": "瑶",
+      "title": "鹿灵守心",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "法师"
+      ],
+      "iconUrl": "heroes/505.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/505/505.jpg",
+      "skinNames": [
+        "鹿灵守心",
+        "森",
+        "遇见神鹿",
+        "时之祈愿",
+        "时之愿境",
+        "山海·碧波行",
+        "真我赫兹",
+        "拾光映像",
+        "大耳狗之梦"
+      ]
+    },
+    {
+      "id": 506,
+      "name": "云中君",
+      "title": "流云之翼",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/506.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/506/506.jpg",
+      "skinNames": [
+        "流云之翼",
+        "荷鲁斯之眼",
+        "纤云弄巧",
+        "时之祈愿",
+        "群星魔术团"
+      ]
+    },
+    {
+      "id": 522,
+      "name": "曜",
+      "title": "星辰之子",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "刺客"
+      ],
+      "iconUrl": "heroes/522.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/522/522.jpg",
+      "skinNames": [
+        "星辰之子",
+        "归虚梦演",
+        "云鹰飞将",
+        "李逍遥",
+        "海·苍雷引"
+      ]
+    },
+    {
+      "id": 518,
+      "name": "马超",
+      "title": "冷晖之枪",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/518.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/518/518.jpg",
+      "skinNames": [
+        "冷晖之枪",
+        "幸存者",
+        "神威",
+        "无双飞将",
+        "琥珀纪元",
+        "访茗客"
+      ]
+    },
+    {
+      "id": 523,
+      "name": "西施",
+      "title": "幻纱之灵",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/523.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/523/523.jpg",
+      "skinNames": [
+        "幻纱之灵",
+        "归虚梦演",
+        "诗语江南",
+        "游龙清影",
+        "玲珑珍味",
+        "至美·乘鲤谣",
+        "雪境奇遇",
+        "续相思",
+        "织梦人"
+      ]
+    },
+    {
+      "id": 525,
+      "name": "鲁班大师",
+      "title": "神匠",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/525.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/525/525.jpg",
+      "skinNames": [
+        "神匠",
+        "归虚梦演",
+        "乓乓大师",
+        "匿光启智者",
+        "探海日志"
+      ]
+    },
+    {
+      "id": 524,
+      "name": "蒙犽",
+      "title": "烈炮小子",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/524.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/524/524.jpg",
+      "skinNames": [
+        "烈炮小子",
+        "归虚梦演",
+        "狂想玩偶喵",
+        "龙鼓争鸣",
+        "胡桃狂想曲",
+        "百解令",
+        "顽岩魄"
+      ]
+    },
+    {
+      "id": 531,
+      "name": "镜",
+      "title": "破镜之刃",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/531.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/531/531.jpg",
+      "skinNames": [
+        "破镜之刃",
+        "冰刃幻境",
+        "炽阳神光",
+        "匿光追影者",
+        "玫瑰异探",
+        "真我赫兹",
+        "青焰无极"
+      ]
+    },
+    {
+      "id": 527,
+      "name": "蒙恬",
+      "title": "秩序统将",
+      "role": "坦克",
+      "roles": [
+        "坦克"
+      ],
+      "iconUrl": "heroes/527.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/527/527.jpg",
+      "skinNames": [
+        "秩序统将",
+        "秩序猎龙将",
+        "蔚蓝守将",
+        "荣光圣徽",
+        "苍云破阵"
+      ]
+    },
+    {
+      "id": 533,
+      "name": "阿古朵",
+      "title": "山林之子",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/533.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/533/533.jpg",
+      "skinNames": [
+        "山林之子",
+        "熊喵少女",
+        "顽趣",
+        "江河有灵",
+        "布丁狗之约"
+      ]
+    },
+    {
+      "id": 536,
+      "name": "夏洛特",
+      "title": "玫瑰剑士",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/536.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/536/536.jpg",
+      "skinNames": [
+        "玫瑰剑士",
+        "永昼",
+        "浮生妄"
+      ]
+    },
+    {
+      "id": 528,
+      "name": "澜",
+      "title": "鲨之猎刃",
+      "role": "刺客",
+      "roles": [
+        "刺客",
+        "战士"
+      ],
+      "iconUrl": "heroes/528.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/528/528.jpg",
+      "skinNames": [
+        "鲨之猎刃",
+        "孤猎",
+        "赏金猎手",
+        "电玩·雷克斯",
+        "逐花归海",
+        "愿照·九州拓"
+      ]
+    },
+    {
+      "id": 537,
+      "name": "司空震",
+      "title": "雷霆之王",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "法师"
+      ],
+      "iconUrl": "heroes/537.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/537/537.jpg",
+      "skinNames": [
+        "雷霆之王",
+        "启蛰",
+        "地狱燃心",
+        "愿照·山河定"
+      ]
+    },
+    {
+      "id": 155,
+      "name": "艾琳",
+      "title": "精灵之舞",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/155.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/155/155.jpg",
+      "skinNames": [
+        "精灵之舞",
+        "女武神",
+        "陌上桑"
+      ]
+    },
+    {
+      "id": 538,
+      "name": "云缨",
+      "title": "燎原之心",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "刺客"
+      ],
+      "iconUrl": "heroes/538.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/538/538.jpg",
+      "skinNames": [
+        "燎原之心",
+        "赤焰之缨",
+        "鹤归松栖",
+        "幻光神枪",
+        "赞萌露比"
+      ]
+    },
+    {
+      "id": 540,
+      "name": "金蝉",
+      "title": "渡世行者",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/540.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/540/540.jpg",
+      "skinNames": [
+        "渡世行者",
+        "前尘",
+        "唐三藏"
+      ]
+    },
+    {
+      "id": 542,
+      "name": "暃",
+      "title": "玉城之子",
+      "role": "刺客",
+      "roles": [
+        "刺客"
+      ],
+      "iconUrl": "heroes/542.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/542/542.jpg",
+      "skinNames": [
+        "玉城之子",
+        "碧珀绯影",
+        "星界游侠",
+        "埋骨钱",
+        "朽木白哉"
+      ]
+    },
+    {
+      "id": 534,
+      "name": "桑启",
+      "title": "萤火之旅",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "法师"
+      ],
+      "iconUrl": "heroes/534.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/534/534.jpg",
+      "skinNames": [
+        "萤火之旅",
+        "画中游",
+        "海盐诗旅",
+        "奇遇星旅",
+        "鸣野蒿",
+        "线条小狗"
+      ]
+    },
+    {
+      "id": 548,
+      "name": "戈娅",
+      "title": "沙海飞舟",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/548.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/548/548.jpg",
+      "skinNames": [
+        "沙海飞舟",
+        "危途狂花",
+        "驭风魔法",
+        "玫蓝誓约"
+      ]
+    },
+    {
+      "id": 521,
+      "name": "海月",
+      "title": "永夜之心",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/521.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/521/521.jpg",
+      "skinNames": [
+        "永夜之心",
+        "幻泉雾影",
+        "浮梦罗烟",
+        "王牌新星",
+        "金乌负日"
+      ]
+    },
+    {
+      "id": 544,
+      "name": "赵怀真",
+      "title": "自在之心",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/544.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/544/544.jpg",
+      "skinNames": [
+        "自在之心",
+        "太极少年",
+        "鹤归松栖"
+      ]
+    },
+    {
+      "id": 545,
+      "name": "莱西奥",
+      "title": "火鹰船长",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/545.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/545/545.jpg",
+      "skinNames": [
+        "火鹰船长",
+        "西部游侠",
+        "末日机甲",
+        "踏浪烽翎"
+      ]
+    },
+    {
+      "id": 564,
+      "name": "姬小满",
+      "title": "武道奇才",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/564.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/564/564.jpg",
+      "skinNames": [
+        "武道奇才",
+        "零食大作战",
+        "妄想食味",
+        "战舞者",
+        "飞车小橘子",
+        "小满鸭"
+      ]
+    },
+    {
+      "id": 514,
+      "name": "亚连",
+      "title": "追忆之刃",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "坦克"
+      ],
+      "iconUrl": "heroes/514.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/514/514.jpg",
+      "skinNames": [
+        "追忆之刃",
+        "破局者",
+        "落雪白狼",
+        "破空之剑"
+      ]
+    },
+    {
+      "id": 159,
+      "name": "朵莉亚",
+      "title": "人鱼之歌",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "法师"
+      ],
+      "iconUrl": "heroes/159.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/159/159.jpg",
+      "skinNames": [
+        "人鱼之歌",
+        "金色潮汐",
+        "心动手记",
+        "幻珠鲛人"
+      ]
+    },
+    {
+      "id": 563,
+      "name": "海诺",
+      "title": "命运之引",
+      "role": "战士",
+      "roles": [
+        "战士",
+        "法师"
+      ],
+      "iconUrl": "heroes/563.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/563/563.jpg",
+      "skinNames": [
+        "命运之引",
+        "时空谍影",
+        "心动手记"
+      ]
+    },
+    {
+      "id": 519,
+      "name": "敖隐",
+      "title": "凌霄真龙",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/519.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/519/519.jpg",
+      "skinNames": [
+        "凌霄真龙"
+      ]
+    },
+    {
+      "id": 517,
+      "name": "大司命",
+      "title": "肃归之戈",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/517.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/517/517.jpg",
+      "skinNames": [
+        "肃归之戈",
+        "暗都幽影",
+        "东方月初",
+        "死亡执政官"
+      ]
+    },
+    {
+      "id": 582,
+      "name": "元流之子(法师)",
+      "title": "万妙之心",
+      "role": "法师",
+      "roles": [
+        "法师"
+      ],
+      "iconUrl": "heroes/582.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/582/582.jpg",
+      "skinNames": [
+        "万妙之心"
+      ]
+    },
+    {
+      "id": 581,
+      "name": "元流之子(坦克)",
+      "title": "止戈之道",
+      "role": "坦克",
+      "roles": [
+        "坦克"
+      ],
+      "iconUrl": "heroes/581.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/581/581.jpg",
+      "skinNames": [
+        "止戈之道"
+      ]
+    },
+    {
+      "id": 577,
+      "name": "少司缘",
+      "title": "聆愿之祝",
+      "role": "辅助",
+      "roles": [
+        "辅助"
+      ],
+      "iconUrl": "heroes/577.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/577/577.jpg",
+      "skinNames": [
+        "聆愿之祝",
+        "涂山红红",
+        "灵卦秘语"
+      ]
+    },
+    {
+      "id": 558,
+      "name": "影",
+      "title": "黯羽东君",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/558.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/558/558.jpg",
+      "skinNames": [
+        "黯羽东君",
+        "魅影绮裳"
+      ]
+    },
+    {
+      "id": 177,
+      "name": "苍",
+      "title": "苍狼末裔",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/177.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/177/177.jpg",
+      "skinNames": [
+        "苍狼末裔",
+        "维京掠夺者",
+        "苍林狼骑"
+      ]
+    },
+    {
+      "id": 550,
+      "name": "空空儿",
+      "title": "笑面诡手",
+      "role": "辅助",
+      "roles": [
+        "辅助"
+      ],
+      "iconUrl": "heroes/550.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/550/550.jpg",
+      "skinNames": [
+        "笑面诡手",
+        "戏梦巡演"
+      ]
+    },
+    {
+      "id": 584,
+      "name": "元流之子(射手)",
+      "title": "沉舟之志",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/584.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/584/584.jpg",
+      "skinNames": [
+        "沉舟之志"
+      ]
+    },
+    {
+      "id": 151,
+      "name": "孙权",
+      "title": "定旌之谋",
+      "role": "射手",
+      "roles": [
+        "射手"
+      ],
+      "iconUrl": "heroes/151.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/151/151.jpg",
+      "skinNames": [
+        "定旌之谋"
+      ]
+    },
+    {
+      "id": 172,
+      "name": "蚩奼",
+      "title": "五兵之主",
+      "role": "战士",
+      "roles": [
+        "战士"
+      ],
+      "iconUrl": "heroes/172.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/172/172.jpg",
+      "skinNames": [
+        "五兵之主",
+        "极光幻客"
+      ]
+    },
+    {
+      "id": 585,
+      "name": "元流之子(辅助)",
+      "title": "守望之诺",
+      "role": "辅助",
+      "roles": [
+        "辅助"
+      ],
+      "iconUrl": "heroes/585.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/585/585.jpg",
+      "skinNames": [
+        "守望之诺"
+      ]
+    },
+    {
+      "id": 188,
+      "name": "大禹",
+      "title": "鼎镇山河",
+      "role": "辅助",
+      "roles": [
+        "辅助",
+        "坦克"
+      ],
+      "iconUrl": "heroes/188.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/188/188.jpg",
+      "skinNames": [
+        "鼎镇山河"
+      ]
+    },
+    {
+      "id": 583,
+      "name": "元流之子(刺客)",
+      "title": "守望之诺",
+      "role": "辅助",
+      "roles": [
+        "辅助"
+      ],
+      "iconUrl": "heroes/583.jpg",
+      "remoteIconUrl": "https://game.gtimg.cn/images/yxzj/img201606/heroimg/583/583.jpg",
+      "skinNames": [
+        "破局之识"
+      ]
+    }
+  ]
+}

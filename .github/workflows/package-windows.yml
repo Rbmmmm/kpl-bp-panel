@@ -1,0 +1,50 @@
+name: Package Windows
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/package-windows.yml"
+      - "electron/**"
+      - "public/**"
+      - "src/**"
+      - "index.html"
+      - "package.json"
+      - "package-lock.json"
+      - "tsconfig*.json"
+      - "vite.config.ts"
+
+jobs:
+  package-windows:
+    name: Build unsigned Windows installer
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Windows package
+        run: npm run package:win
+
+      - name: Upload Windows installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: KPL-BP-Panel-windows-installer
+          path: release/*-win-x64-setup.exe
+          if-no-files-found: error
+
+      - name: Upload unpacked Windows app
+        uses: actions/upload-artifact@v4
+        with:
+          name: KPL-BP-Panel-win-unpacked
+          path: release/win-unpacked/**
+          if-no-files-found: error
