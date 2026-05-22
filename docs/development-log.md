@@ -47,6 +47,8 @@ This file records completed feature and fix milestones. Keep entries short and u
 - Verification: initial Windows packaging workflow failed because NSIS rejected the old malformed ICO; `npm run icons:win`; `file build/icon.ico`.
 - Packaging: disabled electron-builder implicit CI publishing for Windows packaging by adding `--publish never` to `npm run package:win`.
 - Verification: second Windows packaging workflow passed NSIS icon loading and installer creation, then failed only because electron-builder attempted implicit GitHub publishing without `GH_TOKEN`.
+- Packaging: produced the unsigned Windows x64 NSIS installer through GitHub Actions and downloaded the artifact to `release/windows-installer/KPL-BP-Panel-0.1.0-win-x64-setup.exe`.
+- Verification: `gh run watch 26264319481 --repo Rbmmmm/kpl-bp-panel --exit-status` completed successfully; installer artifact size is 95 MB.
 
 Verification currently available:
 
