@@ -2,6 +2,11 @@
 
 This file records completed feature and fix milestones. Keep entries short and update it whenever an agent completes or fixes something.
 
+## 2026-05-23
+
+- UI: fixed the top-center score display to follow the current game's blue/red side order instead of fixed team A/B order, so a previous-game loser on blue side no longer appears to lead after losing.
+- Verification: `npm run test`; `npm run typecheck`; `npm run build`; browser smoke test confirmed 成都AG超玩会 won G1 while 重庆狼队 received G2 side selection and the top score displayed blue/red as `0 : 1`.
+
 ## 2026-05-22
 
 - Web: added browser persistence layer (`browserPersistence.ts`) with `localStorage` autosave, file download for save/export, and file upload for open. App now works in both Electron and browser (GitHub Pages) without code changes.

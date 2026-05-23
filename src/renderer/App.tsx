@@ -28,6 +28,7 @@ import {
   saveBrowserAutosave
 } from "./browserPersistence";
 import { loadLocalHeroData, type HeroRecord } from "./heroData";
+import { getDisplayScore } from "./matchDisplay";
 
 const PLAYER_ROLES = ["对抗路", "打野", "中路", "发育路", "游走"] as const;
 const SUMMONER_SKILLS = ["闪现", "惩击", "治疗", "净化", "狂暴", "弱化", "干扰", "眩晕", "斩杀"];
@@ -491,6 +492,7 @@ export function App() {
 
   const modeLabel = game?.mode === "peak_duel" ? "巅峰对决" : "全局 BP";
   const shouldPrioritizeHeroSelector = game?.mode === "global_bp" && match.status === "drafting";
+  const displayScore = getDisplayScore(match, game);
   const heroSelector = (
     <HeroSelector
       heroes={filteredHeroes}
@@ -534,7 +536,7 @@ export function App() {
         <article className="match-hub">
           <span>BO7 第 {match.games.length ? match.currentGameIndex : match.games.length + 1} 局</span>
           <strong>
-            {match.score.teamA} : {match.score.teamB}
+            {displayScore.leftScore} : {displayScore.rightScore}
           </strong>
           <p>{getStepText(match, game, bpStep)}</p>
         </article>
