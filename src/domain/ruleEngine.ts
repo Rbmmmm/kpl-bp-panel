@@ -53,6 +53,7 @@ const CHINESE_MESSAGES: Record<RuleErrorCode, string> = {
   invalid_lineup: "阵容无效。",
   invalid_pick_slot: "Pick 位置无效。",
   invalid_bp_step: "当前 BP 步骤不允许该操作。",
+  no_bp_action_to_undo: "当前没有可撤回的 Ban/Pick 操作。",
   game_not_drafting: "当前小局不在 BP 阶段。",
   game_not_complete: "当前小局尚未完成 BP。",
   game_already_complete: "当前小局已经完成。",
@@ -201,6 +202,36 @@ export function applyPick(match: MatchState, heroId: number): RuleResult<MatchSt
   return applyBpAction(match, "pick", heroId);
 }
 
+export function undoLastBpAction(match: MatchState): RuleResult<MatchState> {
+  if (match.status === "match_complete") {
+    return fail("match_already_complete");
+  }
+
+  const game = match.games[match.currentGameIndex - 1];
+  if (!game || match.status !== "drafting" || game.mode !== "global_bp") {
+    return fail("game_not_drafting");
+  }
+
+  const undoStepIndex = getUndoStepIndex(game);
+  if (undoStepIndex === undefined) {
+    return fail("no_bp_action_to_undo", { gameIndex: game.index });
+  }
+
+  const undoStep = GLOBAL_BP_STEPS[undoStepIndex];
+  const target = undoStep.action === "ban" ? game.bans : game.picks;
+
+  return ok(
+    replaceCurrentGame(match, {
+      ...game,
+      [undoStep.action === "ban" ? "bans" : "picks"]: {
+        ...target,
+        [undoStep.side]: target[undoStep.side].slice(0, -1)
+      },
+      bpStepIndex: undoStepIndex
+    })
+  );
+}
+
 function applyBpAction(match: MatchState, action: BpActionType, heroId: number): RuleResult<MatchState> {
   if (match.status === "match_complete") {
     return fail("match_already_complete");
@@ -303,6 +334,21 @@ function countActionsBeforeStep(stepIndex: number, side: Side, action: BpActionT
   return GLOBAL_BP_STEPS.slice(0, stepIndex)
     .filter((step) => step.side === side && step.action === action)
     .reduce((total, step) => total + step.count, 0);
+}
+
+function getUndoStepIndex(game: GameState): number | undefined {
+  const currentStep = GLOBAL_BP_STEPS[game.bpStepIndex];
+
+  if (currentStep) {
+    const target = currentStep.action === "ban" ? game.bans : game.picks;
+    const priorCount = countActionsBeforeStep(game.bpStepIndex, currentStep.side, currentStep.action);
+    if (target[currentStep.side].length > priorCount) {
+      return game.bpStepIndex;
+    }
+  }
+
+  const previousStepIndex = game.bpStepIndex - 1;
+  return previousStepIndex >= 0 ? previousStepIndex : undefined;
 }
 
 export function completeGame(match: MatchState, winner: TeamId): RuleResult<MatchState> {

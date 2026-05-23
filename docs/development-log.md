@@ -4,6 +4,8 @@ This file records completed feature and fix milestones. Keep entries short and u
 
 ## 2026-05-23
 
+- UI: added a normal BP "撤回上一步" control backed by the rule engine; it undoes the latest Ban or Pick, including the final Pick before winner selection, and restores the BP step.
+- Verification: `npm run test`; `npm run typecheck`; `npm run build`; browser smoke test confirmed the undo button removes the latest Red Ban and restores the Red Ban step.
 - UI: mirrored red-side Ban/Pick slot rendering, added Pick position labels (`1 对抗路`, `2 打野`, `3 中路`, `4 射手`, `5 辅助`) for both sides, and enabled same-side drag swapping after all ten normal BP picks are complete.
 - Verification: `npm run test`; `npm run typecheck`; `npm run build`; browser smoke test confirmed red Pick visual order `5 -> 1` and drag swapping updates slot order.
 - UI: fixed the top-center score display to follow the current game's blue/red side order instead of fixed team A/B order, so a previous-game loser on blue side no longer appears to lead after losing.

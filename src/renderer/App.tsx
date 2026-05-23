@@ -11,6 +11,7 @@ import {
   getTeamForSide,
   submitPeakDuelLineup,
   swapPickSlots,
+  undoLastBpAction,
   type BpStep,
   type GameState,
   type MatchState,
@@ -463,6 +464,10 @@ export function App() {
     applyMatchResult(bpStep.action === "ban" ? applyBan(match, heroId) : applyPick(match, heroId), "操作已记录。");
   }
 
+  function undoBpAction() {
+    applyMatchResult(undoLastBpAction(match), "已撤回上一步操作。");
+  }
+
   function selectWinner(winner: TeamId) {
     applyMatchResult(completeGame(match, winner), `${match.teams[winner].name} 获得本局胜利。`);
   }
@@ -579,7 +584,14 @@ export function App() {
           {match.currentSideSelection ? <SideSelectionPanel match={match} onSelectSide={startGame} /> : null}
 
           {game?.mode === "global_bp" ? (
-            <GlobalBpPanel match={match} game={game} bpStep={bpStep} heroById={heroById} onWinner={selectWinner} />
+            <GlobalBpPanel
+              match={match}
+              game={game}
+              bpStep={bpStep}
+              heroById={heroById}
+              onUndo={undoBpAction}
+              onWinner={selectWinner}
+            />
           ) : null}
 
           {game?.mode === "peak_duel" ? (
@@ -703,15 +715,18 @@ function GlobalBpPanel({
   game,
   bpStep,
   heroById,
+  onUndo,
   onWinner
 }: {
   match: MatchState;
   game: GameState;
   bpStep?: BpStep;
   heroById: Map<number, HeroRecord>;
+  onUndo: () => void;
   onWinner: (winner: TeamId) => void;
 }) {
   const finished = isGlobalBpComplete(game);
+  const canUndo = match.status === "drafting" && hasBpActions(game);
 
   return (
     <section className="panel-section">
@@ -726,10 +741,19 @@ function GlobalBpPanel({
           <small>{match.teams[getTeamForSide(game, bpStep.side)].name}</small>
         </div>
       ) : null}
+      <div className="bp-actions">
+        <button type="button" onClick={onUndo} disabled={!canUndo}>
+          撤回上一步
+        </button>
+      </div>
       {finished ? <WinnerButtons match={match} game={game} onWinner={onWinner} /> : <BpTimeline game={game} />}
       <MiniDraftPreview game={game} heroById={heroById} />
     </section>
   );
+}
+
+function hasBpActions(game: GameState): boolean {
+  return SIDES.some((side) => game.bans[side].length > 0 || game.picks[side].length > 0);
 }
 
 function PeakDuelPanel({

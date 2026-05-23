@@ -10,6 +10,7 @@ import {
   GLOBAL_BP_STEPS,
   submitPeakDuelLineup,
   swapPickSlots,
+  undoLastBpAction,
   YUANLIUZHIZI_BP_UNITS,
   type MatchState,
   type PeakDuelLineup,
@@ -155,6 +156,57 @@ describe("KPL BO7 rule engine", () => {
     expect(result.ok).toBe(false);
     if (!result.ok) {
       expect(result.error.code).toBe("hero_banned_current_game");
+    }
+  });
+
+  it("undoes the latest ban and restores the previous BP step", () => {
+    let match = createDraft();
+    match = unwrap(applyBan(match, 101));
+
+    match = unwrap(undoLastBpAction(match));
+
+    const game = match.games[0];
+    expect(game.bans.blue).toEqual([]);
+    expect(game.bpStepIndex).toBe(0);
+    expect(getCurrentBpStep(game)).toEqual({ side: "blue", action: "ban", count: 1 });
+  });
+
+  it("undoes the latest pick inside a multi-pick step", () => {
+    let match = createDraft();
+    match = unwrap(applyBan(match, 101));
+    match = unwrap(applyBan(match, 102));
+    match = unwrap(applyBan(match, 103));
+    match = unwrap(applyBan(match, 104));
+    match = unwrap(applyPick(match, 105));
+    match = unwrap(applyPick(match, 106));
+
+    match = unwrap(undoLastBpAction(match));
+
+    const game = match.games[0];
+    expect(game.picks.red).toEqual([]);
+    expect(game.bpStepIndex).toBe(5);
+    expect(getCurrentBpStep(game)).toEqual({ side: "red", action: "pick", count: 2 });
+  });
+
+  it("undoes the final pick after BP is complete", () => {
+    let match = runLegalDraft(createDraft(), 100);
+
+    match = unwrap(undoLastBpAction(match));
+
+    const game = match.games[0];
+    expect(game.picks.red).toEqual([105, 106, 109, 116]);
+    expect(game.bpStepIndex).toBe(GLOBAL_BP_STEPS.length - 1);
+    expect(getCurrentBpStep(game)).toEqual({ side: "red", action: "pick", count: 1 });
+  });
+
+  it("rejects undo when no BP action exists", () => {
+    const match = createDraft();
+
+    const result = undoLastBpAction(match);
+
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.error.code).toBe("no_bp_action_to_undo");
     }
   });
 

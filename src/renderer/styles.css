@@ -749,6 +749,20 @@ button.red {
   background: rgba(95, 25, 39, 0.44);
 }
 
+.bp-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: -4px 0 12px;
+}
+
+.bp-actions button {
+  min-height: 32px;
+  border-color: rgba(142, 166, 207, 0.28);
+  background: rgba(11, 18, 30, 0.82);
+  color: #dce8f8;
+  padding: 0 12px;
+}
+
 .current-step strong {
   grid-row: 1 / span 2;
   grid-column: 2;

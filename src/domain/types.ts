@@ -78,6 +78,7 @@ export type RuleErrorCode =
   | "invalid_lineup"
   | "invalid_pick_slot"
   | "invalid_bp_step"
+  | "no_bp_action_to_undo"
   | "game_not_drafting"
   | "game_not_complete"
   | "game_already_complete"
