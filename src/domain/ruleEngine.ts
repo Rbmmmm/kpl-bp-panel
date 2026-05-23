@@ -51,6 +51,7 @@ const CHINESE_MESSAGES: Record<RuleErrorCode, string> = {
   invalid_side: "选边无效。",
   invalid_hero: "英雄无效。",
   invalid_lineup: "阵容无效。",
+  invalid_pick_slot: "Pick 位置无效。",
   invalid_bp_step: "当前 BP 步骤不允许该操作。",
   game_not_drafting: "当前小局不在 BP 阶段。",
   game_not_complete: "当前小局尚未完成 BP。",
@@ -361,6 +362,51 @@ export function completeGame(match: MatchState, winner: TeamId): RuleResult<Matc
   });
 }
 
+export function swapPickSlots(
+  match: MatchState,
+  side: Side,
+  fromSlotIndex: number,
+  toSlotIndex: number
+): RuleResult<MatchState> {
+  if (match.status === "match_complete") {
+    return fail("match_already_complete");
+  }
+
+  if (!isSide(side)) {
+    return fail("invalid_side", { side });
+  }
+
+  const game = match.games[match.currentGameIndex - 1];
+  if (!game || game.mode !== "global_bp") {
+    return fail("game_not_drafting");
+  }
+
+  if (!isGlobalBpComplete(game)) {
+    return fail("game_not_complete", { gameIndex: game.index });
+  }
+
+  if (!isPickSlotIndex(fromSlotIndex) || !isPickSlotIndex(toSlotIndex)) {
+    return fail("invalid_pick_slot", { fromSlotIndex, toSlotIndex });
+  }
+
+  if (fromSlotIndex === toSlotIndex) {
+    return ok(match);
+  }
+
+  const picks = [...game.picks[side]];
+  [picks[fromSlotIndex], picks[toSlotIndex]] = [picks[toSlotIndex], picks[fromSlotIndex]];
+
+  return ok(
+    replaceCurrentGame(match, {
+      ...game,
+      picks: {
+        ...game.picks,
+        [side]: picks
+      }
+    })
+  );
+}
+
 function isGlobalBpComplete(game: GameState): boolean {
   return (
     game.bpStepIndex === GLOBAL_BP_STEPS.length &&
@@ -369,6 +415,10 @@ function isGlobalBpComplete(game: GameState): boolean {
     game.picks.blue.length === 5 &&
     game.picks.red.length === 5
   );
+}
+
+function isPickSlotIndex(value: number): boolean {
+  return Number.isInteger(value) && value >= 0 && value < 5;
 }
 
 function applyUsedHeroes(teams: MatchState["teams"], game: GameState): MatchState["teams"] {

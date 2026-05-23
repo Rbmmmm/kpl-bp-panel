@@ -9,6 +9,7 @@ import {
   getCurrentBpStep,
   GLOBAL_BP_STEPS,
   submitPeakDuelLineup,
+  swapPickSlots,
   YUANLIUZHIZI_BP_UNITS,
   type MatchState,
   type PeakDuelLineup,
@@ -114,6 +115,32 @@ describe("KPL BO7 rule engine", () => {
     expect(game.bans.red).toHaveLength(5);
     expect(game.picks.blue).toHaveLength(5);
     expect(game.picks.red).toHaveLength(5);
+  });
+
+  it("swaps completed pick slots on the same side", () => {
+    let match = runLegalDraft(createDraft(), 100);
+    const before = match.games[0].picks.blue;
+
+    match = unwrap(swapPickSlots(match, "blue", 0, 4));
+
+    expect(match.games[0].picks.blue).toEqual([before[4], before[1], before[2], before[3], before[0]]);
+    expect(match.games[0].picks.red).toEqual([105, 106, 109, 116, 119]);
+  });
+
+  it("rejects pick slot swaps before all ten picks are complete", () => {
+    let match = createDraft();
+    match = unwrap(applyBan(match, 101));
+    match = unwrap(applyBan(match, 102));
+    match = unwrap(applyBan(match, 103));
+    match = unwrap(applyBan(match, 104));
+    match = unwrap(applyPick(match, 105));
+
+    const result = swapPickSlots(match, "blue", 0, 1);
+
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.error.code).toBe("game_not_complete");
+    }
   });
 
   it("blocks picking a hero banned in the current game", () => {

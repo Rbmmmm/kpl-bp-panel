@@ -76,6 +76,7 @@ export type RuleErrorCode =
   | "invalid_side"
   | "invalid_hero"
   | "invalid_lineup"
+  | "invalid_pick_slot"
   | "invalid_bp_step"
   | "game_not_drafting"
   | "game_not_complete"

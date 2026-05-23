@@ -439,24 +439,47 @@ select:focus {
 .hero-slot {
   position: relative;
   display: grid;
+  align-content: end;
+  justify-items: center;
+  gap: 3px;
   min-width: 0;
   min-height: clamp(60px, 6vw, 74px);
-  place-items: center;
   overflow: hidden;
   border: 1px dashed rgba(142, 166, 207, 0.26);
   border-radius: 6px;
   background: rgba(5, 9, 16, 0.72);
   color: #7186a5;
   isolation: isolate;
+  padding: 8px 2px;
 }
 
 .hero-slot.pick {
   min-height: clamp(86px, 8vw, 106px);
 }
 
+.hero-slot:not(.filled) {
+  align-content: center;
+}
+
 .hero-slot.filled {
   border-style: solid;
   color: #f3f7ff;
+}
+
+.hero-slot.drag-enabled {
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.hero-slot.drag-enabled:hover {
+  border-color: rgba(246, 201, 96, 0.62);
+}
+
+.hero-slot.drag-enabled:active,
+.hero-slot.drag-active {
+  border-color: rgba(246, 201, 96, 0.82);
+  cursor: grabbing;
 }
 
 .hero-slot img {
@@ -477,7 +500,7 @@ select:focus {
   content: "";
 }
 
-.hero-slot span {
+.hero-slot .slot-main {
   overflow: hidden;
   max-width: 100%;
   padding: 0 5px;
@@ -486,6 +509,21 @@ select:focus {
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.hero-slot small {
+  overflow: hidden;
+  max-width: 100%;
+  color: #9fb1cc;
+  font-size: 11px;
+  font-weight: 650;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hero-slot.filled small {
+  color: #d6e6ff;
 }
 
 .used-pool {

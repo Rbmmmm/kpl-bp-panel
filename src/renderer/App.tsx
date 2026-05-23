@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type PointerEvent } from "react";
 import {
   applyBan,
   applyPick,
@@ -10,6 +10,7 @@ import {
   getSideForTeam,
   getTeamForSide,
   submitPeakDuelLineup,
+  swapPickSlots,
   type BpStep,
   type GameState,
   type MatchState,
@@ -31,6 +32,7 @@ import { loadLocalHeroData, type HeroRecord } from "./heroData";
 import { getDisplayScore } from "./matchDisplay";
 
 const PLAYER_ROLES = ["对抗路", "打野", "中路", "发育路", "游走"] as const;
+const PICK_POSITION_LABELS = ["对抗路", "打野", "中路", "射手", "辅助"] as const;
 const SUMMONER_SKILLS = ["闪现", "惩击", "治疗", "净化", "狂暴", "弱化", "干扰", "眩晕", "斩杀"];
 const NORMAL_BAN_SLOT_COUNT = 5;
 const NORMAL_PICK_SLOT_COUNT = 5;
@@ -465,6 +467,10 @@ export function App() {
     applyMatchResult(completeGame(match, winner), `${match.teams[winner].name} 获得本局胜利。`);
   }
 
+  function swapCurrentPickSlots(side: Side, fromSlotIndex: number, toSlotIndex: number) {
+    applyMatchResult(swapPickSlots(match, side, fromSlotIndex, toSlotIndex), "位置已交换。");
+  }
+
   function updatePeakDraft(teamId: TeamId, slotIndex: number, patch: Partial<PeakSlotDraft>) {
     setPeakDrafts((current) => ({
       ...current,
@@ -553,7 +559,7 @@ export function App() {
       </section>
 
       <section className="draft-board" aria-label="BP 模拟主面板">
-        <SidePanel side="blue" match={match} game={game} heroById={heroById} />
+        <SidePanel side="blue" match={match} game={game} heroById={heroById} onSwapPickSlots={swapCurrentPickSlots} />
 
         <section className="control-column" aria-label="中心操作区">
           {shouldPrioritizeHeroSelector ? heroSelector : null}
@@ -595,7 +601,7 @@ export function App() {
           {shouldPrioritizeHeroSelector ? null : heroSelector}
         </section>
 
-        <SidePanel side="red" match={match} game={game} heroById={heroById} />
+        <SidePanel side="red" match={match} game={game} heroById={heroById} onSwapPickSlots={swapCurrentPickSlots} />
       </section>
 
       <GameHistory match={match} heroById={heroById} />
@@ -905,16 +911,25 @@ function SidePanel({
   side,
   match,
   game,
-  heroById
+  heroById,
+  onSwapPickSlots
 }: {
   side: Side;
   match: MatchState;
   game?: GameState;
   heroById: Map<number, HeroRecord>;
+  onSwapPickSlots: (side: Side, fromSlotIndex: number, toSlotIndex: number) => void;
 }) {
   const teamId = game ? getTeamForSide(game, side) : side === "blue" ? "teamA" : "teamB";
   const bans = game?.bans[side] ?? [];
   const picks = game?.picks[side] ?? [];
+  const canSwapPickSlots = Boolean(
+    game &&
+      game.mode === "global_bp" &&
+      match.status !== "match_complete" &&
+      game.picks.blue.length === NORMAL_PICK_SLOT_COUNT &&
+      game.picks.red.length === NORMAL_PICK_SLOT_COUNT
+  );
 
   return (
     <section className={`side-panel ${side}`} aria-label={sideText[side]}>
@@ -922,8 +937,17 @@ function SidePanel({
         <span>{sideText[side]}</span>
         <strong title={match.teams[teamId].name}>{match.teams[teamId].name}</strong>
       </div>
-      <SlotGroup title="本局 Ban 位" count={NORMAL_BAN_SLOT_COUNT} heroIds={bans} heroById={heroById} kind="ban" />
-      <SlotGroup title="本局 Pick 位" count={NORMAL_PICK_SLOT_COUNT} heroIds={picks} heroById={heroById} kind="pick" />
+      <SlotGroup title="本局 Ban 位" count={NORMAL_BAN_SLOT_COUNT} heroIds={bans} heroById={heroById} kind="ban" side={side} />
+      <SlotGroup
+        title="本局 Pick 位"
+        count={NORMAL_PICK_SLOT_COUNT}
+        heroIds={picks}
+        heroById={heroById}
+        kind="pick"
+        side={side}
+        canSwapPickSlots={canSwapPickSlots}
+        onSwapPickSlots={onSwapPickSlots}
+      />
       <UsedHeroPool heroIds={match.teams[teamId].usedHeroIds} heroById={heroById} />
     </section>
   );
@@ -934,39 +958,115 @@ function SlotGroup({
   count,
   heroIds,
   heroById,
-  kind
+  kind,
+  side,
+  canSwapPickSlots = false,
+  onSwapPickSlots
 }: {
   title: string;
   count: number;
   heroIds: number[];
   heroById: Map<number, HeroRecord>;
   kind: "ban" | "pick";
+  side: Side;
+  canSwapPickSlots?: boolean;
+  onSwapPickSlots?: (side: Side, fromSlotIndex: number, toSlotIndex: number) => void;
 }) {
-  const slots = Array.from({ length: count }, (_, index) => heroIds[index]);
+  const slotIndexes = Array.from({ length: count }, (_, index) => index);
+  const visualSlotIndexes = side === "red" ? [...slotIndexes].reverse() : slotIndexes;
+  const [dragSourceSlotIndex, setDragSourceSlotIndex] = useState<number | null>(null);
+
+  function handlePointerDown(event: PointerEvent<HTMLDivElement>, slotIndex: number) {
+    if (!canSwapPickSlots || kind !== "pick") {
+      return;
+    }
+
+    event.preventDefault();
+    setDragSourceSlotIndex(slotIndex);
+  }
+
+  function handlePointerUp(slotIndex: number) {
+    if (!canSwapPickSlots || kind !== "pick" || !onSwapPickSlots || dragSourceSlotIndex === null) {
+      setDragSourceSlotIndex(null);
+      return;
+    }
+
+    if (dragSourceSlotIndex !== slotIndex) {
+      onSwapPickSlots(side, dragSourceSlotIndex, slotIndex);
+    }
+    setDragSourceSlotIndex(null);
+  }
+
+  function handlePointerCancel() {
+    setDragSourceSlotIndex(null);
+  }
 
   return (
     <div className="slot-group">
       <h2>{title}</h2>
       <div className={`slot-grid ${kind === "ban" ? "ban-grid" : "pick-grid"}`}>
-        {slots.map((heroId, index) => (
-          <HeroSlot key={`${kind}-${index}`} hero={heroId ? heroById.get(heroId) : undefined} fallback={`空位 ${index + 1}`} kind={kind} />
+        {visualSlotIndexes.map((slotIndex) => (
+          <HeroSlot
+            key={`${kind}-${slotIndex}`}
+            hero={heroIds[slotIndex] ? heroById.get(heroIds[slotIndex]) : undefined}
+            fallback={`空位 ${slotIndex + 1}`}
+            kind={kind}
+            positionLabel={kind === "pick" ? PICK_POSITION_LABELS[slotIndex] : undefined}
+            slotNumber={kind === "pick" ? slotIndex + 1 : undefined}
+            dragEnabled={canSwapPickSlots && kind === "pick" && Boolean(heroIds[slotIndex])}
+            dragActive={dragSourceSlotIndex === slotIndex}
+            onPointerDown={(event) => handlePointerDown(event, slotIndex)}
+            onPointerUp={() => handlePointerUp(slotIndex)}
+            onPointerCancel={handlePointerCancel}
+          />
         ))}
       </div>
     </div>
   );
 }
 
-function HeroSlot({ hero, fallback, kind }: { hero?: HeroRecord; fallback: string; kind: "ban" | "pick" }) {
+function HeroSlot({
+  hero,
+  fallback,
+  kind,
+  positionLabel,
+  slotNumber,
+  dragEnabled,
+  dragActive,
+  onPointerDown,
+  onPointerUp,
+  onPointerCancel
+}: {
+  hero?: HeroRecord;
+  fallback: string;
+  kind: "ban" | "pick";
+  positionLabel?: string;
+  slotNumber?: number;
+  dragEnabled?: boolean;
+  dragActive?: boolean;
+  onPointerDown?: (event: PointerEvent<HTMLDivElement>) => void;
+  onPointerUp?: (event: PointerEvent<HTMLDivElement>) => void;
+  onPointerCancel?: (event: PointerEvent<HTMLDivElement>) => void;
+}) {
+  const label = hero?.name ?? fallback;
+
   return (
-    <div className={`hero-slot ${kind} ${hero ? "filled" : ""}`}>
-      {hero ? (
-        <>
-          <img alt="" src={hero.iconUrl} />
-          <span title={hero.name}>{hero.name}</span>
-        </>
-      ) : (
-        <span>{fallback}</span>
-      )}
+    <div
+      className={`hero-slot ${kind} ${hero ? "filled" : ""} ${dragEnabled ? "drag-enabled" : ""} ${dragActive ? "drag-active" : ""}`}
+      onPointerDown={onPointerDown}
+      onPointerUp={onPointerUp}
+      onPointerCancel={onPointerCancel}
+      title={dragEnabled ? "拖动到同侧其他位置可交换" : label}
+    >
+      {hero ? <img alt="" src={hero.iconUrl} /> : null}
+      <span className="slot-main" title={label}>
+        {label}
+      </span>
+      {positionLabel && slotNumber ? (
+        <small>
+          {slotNumber} · {positionLabel}
+        </small>
+      ) : null}
     </div>
   );
 }

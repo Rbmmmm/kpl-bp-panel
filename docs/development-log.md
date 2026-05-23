@@ -4,6 +4,8 @@ This file records completed feature and fix milestones. Keep entries short and u
 
 ## 2026-05-23
 
+- UI: mirrored red-side Ban/Pick slot rendering, added Pick position labels (`1 对抗路`, `2 打野`, `3 中路`, `4 射手`, `5 辅助`) for both sides, and enabled same-side drag swapping after all ten normal BP picks are complete.
+- Verification: `npm run test`; `npm run typecheck`; `npm run build`; browser smoke test confirmed red Pick visual order `5 -> 1` and drag swapping updates slot order.
 - UI: fixed the top-center score display to follow the current game's blue/red side order instead of fixed team A/B order, so a previous-game loser on blue side no longer appears to lead after losing.
 - Verification: `npm run test`; `npm run typecheck`; `npm run build`; browser smoke test confirmed 成都AG超玩会 won G1 while 重庆狼队 received G2 side selection and the top score displayed blue/red as `0 : 1`.
 
